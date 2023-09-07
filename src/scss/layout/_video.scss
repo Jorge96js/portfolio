@@ -1,0 +1,25 @@
+.video{
+    position: absolute;
+    max-height: 70rem;
+    min-height: 80rem;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.contenido-header{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.layout{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: black;
+    content: " ";
+    width: 100%;
+    z-index: 2;
+    filter: blur(211px);
+}

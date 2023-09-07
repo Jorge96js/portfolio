@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+.header {
+  position: relative;
+  display: flex;
+  background-color: #090909;
+  height: 40rem;
+  overflow: hidden;
+}
+.header h1 {
+  font-size: xxx-large;
+  margin: auto;
+}
+.header p {
+  font-size: large;
+  margin: 2rem auto;
+  font-weight: bolder;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+.skills {
+  padding: 5rem 0 0 0;
+  color: #fff;
+  background-color: #222222;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  width: 60rem;
+  max-width: 90%;
+  padding: 5rem;
+}
+.card-about p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.card-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  place-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  background: #1a1a1a;
+  padding: 5rem 5rem;
+}
+.card-skills i {
+  font-size: 5rem;
+}
+.card-skills .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  width: 60%;
+  margin: 6px;
+}
+
+.proyectos {
+  width: 100%;
+  background: #0f0f0f;
+  padding: 5rem 2rem;
+}
+.proyectos .proyecto {
+  position: relative;
+  background: #222222;
+  height: 30rem;
+  width: 50rem;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center -5rem;
+  overflow: hidden;
+}
+.proyectos .proyecto-body {
+  position: absolute;
+  background: #090909;
+  height: 100%;
+  width: 100%;
+  top: 15.5rem;
+  color: #F1ECE7;
+  padding: 2.5rem 1rem;
+}
+.proyectos .info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.proyectos .info a {
+  margin: 0 5px;
+  font-weight: bold;
+}
+.proyectos .info .tecnologias {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  font-size: x-large;
+  width: 20rem;
+  max-width: 20rem;
+}
+.proyectos .info .tecnologias li {
+  list-style: none;
+  margin: 0 1rem;
+}
+.proyectos .info .tecnologias li img {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.video {
+  position: absolute;
+  max-height: 70rem;
+  min-height: 80rem;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.contenido-header {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.layout {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: black;
+  content: " ";
+  width: 100%;
+  z-index: 2;
+  filter: blur(211px);
+}
+
+.navbar {
+  font-size: 20px;
+  height: 5rem;
+  padding: 1rem 0;
+}
+
+.certificados {
+  background-color: #0f0f0f;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #090909;
+}
+
+.centrar {
+  margin: auto;
+}
+
+.bg-negroClaro {
+  background: #222222 !important;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.button{
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 0;
+  margin-top: 10px;
+}
+.particles-js-canvas-el{
+  height: 130rem!important;
+}
+.enlaces_proyectos{
+  color: #fff;
+  text-decoration: none;
+}
+
+.enlaces_proyectos:hover{
+  color: #777777;
+}
+
+#button {
+  display: inline-block;
+  background-color: #4e4e4e;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-about p{
+  text-align: justify;
+}
+
+.contacto-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  padding: 0;
+}
+.contacto-list li{
+  color: #fff;
+  font-size: 13px;
+}
+
+.columna{
+  flex-direction: column;
+  gap: 0;
+}

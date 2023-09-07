@@ -1,0 +1,104 @@
+@use 'base/variables' as v;
+
+.skills{
+    padding: 5rem 0 0 0;
+    color: v.$blanco;
+    background-color: v.$negroClaro;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.card-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background: v.$amarillo;
+    margin:5rem auto;
+    width: 60rem;
+    max-width: 90%;
+    padding: 5rem;
+    p{
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+.card-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 5rem 5rem;
+    i{
+        font-size: 5rem;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+        width: 60%;
+        margin: 6px;
+    }
+}
+.proyectos{
+    width: 100%;
+    background: #0f0f0f;
+    padding: 5rem 2rem;
+
+    
+    .proyecto{
+        position: relative;
+        background: v.$negroClaro;
+        height: 30rem;
+        width: 50rem;
+        background-image: url('https://images.pexels.com/photos/7213358/pexels-photo-7213358.jpeg?auto=compress&cs=tinysrgb&w=600');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    .imagen{
+    }
+    .proyecto-body{
+        position: absolute;
+        background: v.$negro;
+        height: 100%;
+        width: 100%;
+        top: 15.5rem;
+        color: v.$claro;
+        padding: 2.5rem 1rem;
+    }
+
+    .info{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        a{
+            margin: 0 5px;
+            font-weight: bold;
+        }
+        .tecnologias{
+            display: flex;
+            margin: 0;
+            justify-content: space-between;
+            font-size: x-large;
+            width: 20rem;
+            max-width: 20rem;
+            li{
+                list-style: none;
+                margin: 0 1rem;
+                img{
+                    width: 100%;
+                    padding: .8rem;
+                }
+            }
+        }
+    }
+}
